@@ -1,0 +1,16 @@
+{"id":"test-01","query":"How long are security audit events stored?","relevant_ids":["atlas-retention-en"]}
+{"id":"test-02","query":"Quel délai pour les demandes de suppression après vérification ?","relevant_ids":["atlas-retention-fr"]}
+{"id":"test-03","query":"What must the on-call engineer do with a leaked token?","relevant_ids":["atlas-incident-en"]}
+{"id":"test-04","query":"Comment signaler une fuite de clé suspectée ?","relevant_ids":["atlas-incident-fr"]}
+{"id":"test-05","query":"How often is a restoration exercise performed?","relevant_ids":["atlas-backup-en"]}
+{"id":"test-06","query":"Quelle est la durée de reprise visée pour la restauration ?","relevant_ids":["atlas-backup-fr"]}
+{"id":"test-07","query":"Who approves production database access?","relevant_ids":["atlas-access-en"]}
+{"id":"test-08","query":"À quelle fréquence les revues d'accès ont lieu ?","relevant_ids":["atlas-access-fr"]}
+{"id":"test-09","query":"How many retries should an API client attempt?","relevant_ids":["atlas-api-en"]}
+{"id":"test-10","query":"À quoi sert une clé d'idempotence ?","relevant_ids":["atlas-api-fr"]}
+{"id":"test-11","query":"What percentage of traffic first receives a release in canary?","relevant_ids":["atlas-deploy-en"]}
+{"id":"test-12","query":"Les migrations doivent être compatibles avec quelle version ?","relevant_ids":["atlas-deploy-fr"]}
+{"id":"test-13","query":"What salary does Atlas pay software interns?","relevant_ids":[]}
+{"id":"test-14","query":"Où est situé le siège social d'Atlas ?","relevant_ids":[]}
+{"id":"test-15","query":"Which GPU accelerator does Atlas purchase for training?","relevant_ids":[]}
+{"id":"test-16","query":"Combien coûte une licence annuelle Atlas ?","relevant_ids":[]}

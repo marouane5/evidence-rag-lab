@@ -1,0 +1,6 @@
+{"id":"challenge-01","query":"How long are database backups retained?","relevant_ids":[]}
+{"id":"challenge-02","query":"Does Atlas encrypt application logs?","relevant_ids":[]}
+{"id":"challenge-03","query":"Which approval is needed for read-only staging access?","relevant_ids":[]}
+{"id":"challenge-04","query":"What is the API rate limit for enterprise workspaces?","relevant_ids":[]}
+{"id":"challenge-05","query":"Combien de jours sont conservées les sauvegardes ?","relevant_ids":[]}
+{"id":"challenge-06","query":"Les journaux applicatifs sont-ils chiffrés ?","relevant_ids":[]}

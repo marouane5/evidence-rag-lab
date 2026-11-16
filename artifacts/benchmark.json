@@ -1,0 +1,524 @@
+{
+  "n_queries": 16,
+  "n_answerable": 12,
+  "n_unanswerable": 4,
+  "recall_at_3": 1.0,
+  "mrr_at_3": 1.0,
+  "answer_source_accuracy": 1.0,
+  "answer_coverage": 0.75,
+  "unanswerable_abstention_rate": 1.0,
+  "confusion": {
+    "answerable_answered": 12,
+    "answerable_abstained": 0,
+    "unanswerable_answered": 0,
+    "unanswerable_abstained": 4
+  },
+  "config": {
+    "min_score": 3.0,
+    "min_coverage": 0.25
+  },
+  "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+  "records": [
+    {
+      "id": "test-01",
+      "expected_ids": [
+        "atlas-retention-en"
+      ],
+      "query": "How long are security audit events stored?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Security audit events are retained for 180 days.",
+      "citations": [
+        {
+          "id": "atlas-retention-en",
+          "title": "Atlas sandbox: log retention",
+          "source": "demo://atlas/policies/retention",
+          "quote": "Security audit events are retained for 180 days."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-retention-en",
+          "score": 5.2445,
+          "coverage": 0.6
+        },
+        {
+          "id": "atlas-retention-fr",
+          "score": 1.7136,
+          "coverage": 0.2
+        },
+        {
+          "id": "atlas-access-en",
+          "score": 1.3639,
+          "coverage": 0.2
+        }
+      ]
+    },
+    {
+      "id": "test-02",
+      "expected_ids": [
+        "atlas-retention-fr"
+      ],
+      "query": "Quel délai pour les demandes de suppression après vérification ?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Les demandes de suppression sont exécutées sous 30 jours après vérification.",
+      "citations": [
+        {
+          "id": "atlas-retention-fr",
+          "title": "Atlas fictif : conservation des journaux",
+          "source": "demo://atlas/fr/policies/retention",
+          "quote": "Les demandes de suppression sont exécutées sous 30 jours après vérification."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-retention-fr",
+          "score": 7.5665,
+          "coverage": 0.8
+        },
+        {
+          "id": "atlas-api-fr",
+          "score": 3.2271,
+          "coverage": 0.4
+        },
+        {
+          "id": "atlas-retention-en",
+          "score": 1.6887,
+          "coverage": 0.2
+        }
+      ]
+    },
+    {
+      "id": "test-03",
+      "expected_ids": [
+        "atlas-incident-en"
+      ],
+      "query": "What must the on-call engineer do with a leaked token?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "The on-call engineer revokes the affected token before investigation.",
+      "citations": [
+        {
+          "id": "atlas-incident-en",
+          "title": "Atlas sandbox: incident response",
+          "source": "demo://atlas/runbooks/incidents",
+          "quote": "The on-call engineer revokes the affected token before investigation."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-incident-en",
+          "score": 8.2048,
+          "coverage": 0.8
+        },
+        {
+          "id": "atlas-deploy-en",
+          "score": 1.5741,
+          "coverage": 0.2
+        }
+      ]
+    },
+    {
+      "id": "test-04",
+      "expected_ids": [
+        "atlas-incident-fr"
+      ],
+      "query": "Comment signaler une fuite de clé suspectée ?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Une fuite de clé suspectée doit être signalée via le formulaire d'incident de sécurité.",
+      "citations": [
+        {
+          "id": "atlas-incident-fr",
+          "title": "Atlas fictif : réponse aux incidents",
+          "source": "demo://atlas/fr/runbooks/incidents",
+          "quote": "Une fuite de clé suspectée doit être signalée via le formulaire d'incident de sécurité."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-incident-fr",
+          "score": 6.2027,
+          "coverage": 0.75
+        },
+        {
+          "id": "atlas-api-fr",
+          "score": 1.5325,
+          "coverage": 0.25
+        }
+      ]
+    },
+    {
+      "id": "test-05",
+      "expected_ids": [
+        "atlas-backup-en"
+      ],
+      "query": "How often is a restoration exercise performed?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "A restoration exercise is performed monthly in an isolated sandbox.",
+      "citations": [
+        {
+          "id": "atlas-backup-en",
+          "title": "Atlas sandbox: backup restoration",
+          "source": "demo://atlas/runbooks/backups",
+          "quote": "A restoration exercise is performed monthly in an isolated sandbox."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-backup-en",
+          "score": 7.7606,
+          "coverage": 0.75
+        }
+      ]
+    },
+    {
+      "id": "test-06",
+      "expected_ids": [
+        "atlas-backup-fr"
+      ],
+      "query": "Quelle est la durée de reprise visée pour la restauration ?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "L'objectif de durée de reprise est de quatre heures et la perte de données maximale visée est de six heures.",
+      "citations": [
+        {
+          "id": "atlas-backup-fr",
+          "title": "Atlas fictif : sauvegarde et restauration",
+          "source": "demo://atlas/fr/runbooks/backups",
+          "quote": "L'objectif de durée de reprise est de quatre heures et la perte de données maximale visée est de six heures."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-backup-fr",
+          "score": 9.9044,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "id": "test-07",
+      "expected_ids": [
+        "atlas-access-en"
+      ],
+      "query": "Who approves production database access?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Production database access requires approval from both the service owner and the security reviewer.",
+      "citations": [
+        {
+          "id": "atlas-access-en",
+          "title": "Atlas sandbox: access reviews",
+          "source": "demo://atlas/policies/access",
+          "quote": "Production database access requires approval from both the service owner and the security reviewer."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-access-en",
+          "score": 7.0726,
+          "coverage": 0.75
+        },
+        {
+          "id": "atlas-access-fr",
+          "score": 1.7658,
+          "coverage": 0.25
+        },
+        {
+          "id": "atlas-backup-en",
+          "score": 1.3843,
+          "coverage": 0.25
+        }
+      ]
+    },
+    {
+      "id": "test-08",
+      "expected_ids": [
+        "atlas-access-fr"
+      ],
+      "query": "À quelle fréquence les revues d'accès ont lieu ?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Les revues d'accès sont trimestrielles.",
+      "citations": [
+        {
+          "id": "atlas-access-fr",
+          "title": "Atlas fictif : revue des accès",
+          "source": "demo://atlas/fr/policies/access",
+          "quote": "Les revues d'accès sont trimestrielles."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-access-fr",
+          "score": 6.3612,
+          "coverage": 0.4
+        }
+      ]
+    },
+    {
+      "id": "test-09",
+      "expected_ids": [
+        "atlas-api-en"
+      ],
+      "query": "How many retries should an API client attempt?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Clients should use exponential backoff with jitter and stop after four retries.",
+      "citations": [
+        {
+          "id": "atlas-api-en",
+          "title": "Atlas sandbox: API retry budget",
+          "source": "demo://atlas/api/rate-limits",
+          "quote": "Clients should use exponential backoff with jitter and stop after four retries."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-api-en",
+          "score": 6.0332,
+          "coverage": 0.5
+        },
+        {
+          "id": "atlas-api-fr",
+          "score": 4.2416,
+          "coverage": 0.3333
+        }
+      ]
+    },
+    {
+      "id": "test-10",
+      "expected_ids": [
+        "atlas-api-fr"
+      ],
+      "query": "À quoi sert une clé d'idempotence ?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Une clé d'idempotence évite de créer un enregistrement en double.",
+      "citations": [
+        {
+          "id": "atlas-api-fr",
+          "title": "Atlas fictif : quotas et nouvelles tentatives API",
+          "source": "demo://atlas/fr/api/rate-limits",
+          "quote": "Une clé d'idempotence évite de créer un enregistrement en double."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-api-fr",
+          "score": 3.5399,
+          "coverage": 0.6667
+        },
+        {
+          "id": "atlas-incident-fr",
+          "score": 1.7136,
+          "coverage": 0.3333
+        }
+      ]
+    },
+    {
+      "id": "test-11",
+      "expected_ids": [
+        "atlas-deploy-en"
+      ],
+      "query": "What percentage of traffic first receives a release in canary?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "A release first receives five percent of traffic in the canary environment.",
+      "citations": [
+        {
+          "id": "atlas-deploy-en",
+          "title": "Atlas sandbox: deployment rollback",
+          "source": "demo://atlas/runbooks/deployment",
+          "quote": "A release first receives five percent of traffic in the canary environment."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-deploy-en",
+          "score": 11.2313,
+          "coverage": 0.8333
+        }
+      ]
+    },
+    {
+      "id": "test-12",
+      "expected_ids": [
+        "atlas-deploy-fr"
+      ],
+      "query": "Les migrations doivent être compatibles avec quelle version ?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Les migrations de base doivent rester compatibles avec la version précédente.",
+      "citations": [
+        {
+          "id": "atlas-deploy-fr",
+          "title": "Atlas fictif : retour arrière du déploiement",
+          "source": "demo://atlas/fr/runbooks/deployment",
+          "quote": "Les migrations de base doivent rester compatibles avec la version précédente."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-deploy-fr",
+          "score": 7.8775,
+          "coverage": 0.8
+        },
+        {
+          "id": "atlas-deploy-en",
+          "score": 3.1482,
+          "coverage": 0.4
+        },
+        {
+          "id": "atlas-incident-fr",
+          "score": 2.2445,
+          "coverage": 0.2
+        }
+      ]
+    },
+    {
+      "id": "test-13",
+      "expected_ids": [],
+      "query": "What salary does Atlas pay software interns?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": true,
+      "answer": "Insufficient evidence in the indexed corpus.",
+      "citations": [],
+      "retrieval": [
+        {
+          "id": "atlas-retention-fr",
+          "score": 0.0576,
+          "coverage": 0.2
+        },
+        {
+          "id": "atlas-retention-en",
+          "score": 0.057,
+          "coverage": 0.2
+        },
+        {
+          "id": "atlas-access-fr",
+          "score": 0.042,
+          "coverage": 0.2
+        }
+      ]
+    },
+    {
+      "id": "test-14",
+      "expected_ids": [],
+      "query": "Où est situé le siège social d'Atlas ?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": true,
+      "answer": "Insufficient evidence in the indexed corpus.",
+      "citations": [],
+      "retrieval": [
+        {
+          "id": "atlas-retention-fr",
+          "score": 0.0576,
+          "coverage": 0.25
+        },
+        {
+          "id": "atlas-retention-en",
+          "score": 0.057,
+          "coverage": 0.25
+        },
+        {
+          "id": "atlas-access-fr",
+          "score": 0.042,
+          "coverage": 0.25
+        }
+      ]
+    },
+    {
+      "id": "test-15",
+      "expected_ids": [],
+      "query": "Which GPU accelerator does Atlas purchase for training?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": true,
+      "answer": "Insufficient evidence in the indexed corpus.",
+      "citations": [],
+      "retrieval": [
+        {
+          "id": "atlas-retention-fr",
+          "score": 0.0576,
+          "coverage": 0.2
+        },
+        {
+          "id": "atlas-retention-en",
+          "score": 0.057,
+          "coverage": 0.2
+        },
+        {
+          "id": "atlas-access-fr",
+          "score": 0.042,
+          "coverage": 0.2
+        }
+      ]
+    },
+    {
+      "id": "test-16",
+      "expected_ids": [],
+      "query": "Combien coûte une licence annuelle Atlas ?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": true,
+      "answer": "Insufficient evidence in the indexed corpus.",
+      "citations": [],
+      "retrieval": [
+        {
+          "id": "atlas-retention-fr",
+          "score": 0.0576,
+          "coverage": 0.2
+        },
+        {
+          "id": "atlas-retention-en",
+          "score": 0.057,
+          "coverage": 0.2
+        },
+        {
+          "id": "atlas-access-fr",
+          "score": 0.042,
+          "coverage": 0.2
+        }
+      ]
+    }
+  ],
+  "threshold_selection": {
+    "split": "development",
+    "n_queries": 10,
+    "method": "16-point grid; maximize correct source or correct abstention"
+  }
+}

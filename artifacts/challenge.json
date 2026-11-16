@@ -1,0 +1,204 @@
+{
+  "n_queries": 6,
+  "n_answerable": 0,
+  "n_unanswerable": 6,
+  "recall_at_3": null,
+  "mrr_at_3": null,
+  "answer_source_accuracy": 0.0,
+  "answer_coverage": 0.6666666666666666,
+  "unanswerable_abstention_rate": 0.3333333333333333,
+  "confusion": {
+    "answerable_answered": 0,
+    "answerable_abstained": 0,
+    "unanswerable_answered": 4,
+    "unanswerable_abstained": 2
+  },
+  "config": {
+    "min_score": 3.0,
+    "min_coverage": 0.25
+  },
+  "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+  "records": [
+    {
+      "id": "challenge-01",
+      "expected_ids": [],
+      "query": "How long are database backups retained?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Encrypted database backups run every six hours.",
+      "citations": [
+        {
+          "id": "atlas-backup-en",
+          "title": "Atlas sandbox: backup restoration",
+          "source": "demo://atlas/runbooks/backups",
+          "quote": "Encrypted database backups run every six hours."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-backup-en",
+          "score": 3.6625,
+          "coverage": 0.5
+        },
+        {
+          "id": "atlas-retention-en",
+          "score": 3.1381,
+          "coverage": 0.25
+        },
+        {
+          "id": "atlas-access-en",
+          "score": 1.3639,
+          "coverage": 0.25
+        }
+      ]
+    },
+    {
+      "id": "challenge-02",
+      "expected_ids": [],
+      "query": "Does Atlas encrypt application logs?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Operational application logs are retained for 14 days.",
+      "citations": [
+        {
+          "id": "atlas-retention-en",
+          "title": "Atlas sandbox: log retention",
+          "source": "demo://atlas/policies/retention",
+          "quote": "Operational application logs are retained for 14 days."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-retention-en",
+          "score": 4.6646,
+          "coverage": 0.75
+        },
+        {
+          "id": "atlas-deploy-en",
+          "score": 1.6115,
+          "coverage": 0.5
+        },
+        {
+          "id": "atlas-retention-fr",
+          "score": 0.0576,
+          "coverage": 0.25
+        }
+      ]
+    },
+    {
+      "id": "challenge-03",
+      "expected_ids": [],
+      "query": "Which approval is needed for read-only staging access?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Production database access requires approval from both the service owner and the security reviewer.",
+      "citations": [
+        {
+          "id": "atlas-access-en",
+          "title": "Atlas sandbox: access reviews",
+          "source": "demo://atlas/policies/access",
+          "quote": "Production database access requires approval from both the service owner and the security reviewer."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-access-en",
+          "score": 6.2397,
+          "coverage": 0.3333
+        }
+      ]
+    },
+    {
+      "id": "challenge-04",
+      "expected_ids": [],
+      "query": "What is the API rate limit for enterprise workspaces?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": true,
+      "answer": "Insufficient evidence in the indexed corpus.",
+      "citations": [],
+      "retrieval": [
+        {
+          "id": "atlas-api-fr",
+          "score": 2.2343,
+          "coverage": 0.2
+        },
+        {
+          "id": "atlas-api-en",
+          "score": 2.1715,
+          "coverage": 0.2
+        },
+        {
+          "id": "atlas-deploy-en",
+          "score": 2.0618,
+          "coverage": 0.2
+        }
+      ]
+    },
+    {
+      "id": "challenge-05",
+      "expected_ids": [],
+      "query": "Combien de jours sont conservées les sauvegardes ?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": true,
+      "answer": "Insufficient evidence in the indexed corpus.",
+      "citations": [],
+      "retrieval": [
+        {
+          "id": "atlas-retention-fr",
+          "score": 2.8069,
+          "coverage": 0.25
+        },
+        {
+          "id": "atlas-backup-fr",
+          "score": 2.2445,
+          "coverage": 0.25
+        },
+        {
+          "id": "atlas-incident-fr",
+          "score": 1.7136,
+          "coverage": 0.25
+        }
+      ]
+    },
+    {
+      "id": "challenge-06",
+      "expected_ids": [],
+      "query": "Les journaux applicatifs sont-ils chiffrés ?",
+      "corpus_sha256": "b5d72ba11a5bd05fd905b3076181217ca5084921063a70f2744feec4288cef69",
+      "method": "extractive_bm25",
+      "generation": false,
+      "abstained": false,
+      "answer": "Les journaux applicatifs sont conservés pendant 14 jours.",
+      "citations": [
+        {
+          "id": "atlas-retention-fr",
+          "title": "Atlas fictif : conservation des journaux",
+          "source": "demo://atlas/fr/policies/retention",
+          "quote": "Les journaux applicatifs sont conservés pendant 14 jours."
+        }
+      ],
+      "retrieval": [
+        {
+          "id": "atlas-retention-fr",
+          "score": 5.4153,
+          "coverage": 0.5
+        }
+      ]
+    }
+  ],
+  "threshold_selection": {
+    "split": "development",
+    "n_queries": 10,
+    "method": "16-point grid; maximize correct source or correct abstention"
+  }
+}

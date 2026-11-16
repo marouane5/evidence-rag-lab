@@ -1,0 +1,10 @@
+{"id":"dev-01","query":"How long are operational application logs retained?","relevant_ids":["atlas-retention-en"]}
+{"id":"dev-02","query":"Combien de jours les événements d'audit de sécurité sont conservés ?","relevant_ids":["atlas-retention-fr"]}
+{"id":"dev-03","query":"What is the database backup schedule?","relevant_ids":["atlas-backup-en"]}
+{"id":"dev-04","query":"Quand expire l'accès administrateur temporaire ?","relevant_ids":["atlas-access-fr"]}
+{"id":"dev-05","query":"What happens when API requests exceed the rate limit?","relevant_ids":["atlas-api-en"]}
+{"id":"dev-06","query":"Quel taux d'erreur déclenche le retour arrière ?","relevant_ids":["atlas-deploy-fr"]}
+{"id":"dev-07","query":"What is Atlas annual enterprise subscription price in euros?","relevant_ids":[]}
+{"id":"dev-08","query":"Qui est le directeur général d'Atlas ?","relevant_ids":[]}
+{"id":"dev-09","query":"What is the warranty on damaged laptop batteries?","relevant_ids":[]}
+{"id":"dev-10","query":"Quelle certification médicale possède Atlas ?","relevant_ids":[]}
